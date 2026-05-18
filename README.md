@@ -1,70 +1,115 @@
-# Getting Started with Create React App
+<div align="center">
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<img src="https://capsule-render.vercel.app/api?type=waving&color=60a5fa&height=180&section=header&text=Cibele%20Soares&fontSize=42&fontColor=fff&fontAlignY=36&desc=Portfólio%20Pessoal&descAlignY=58&descSize=18" width="100%"/>
 
-## Available Scripts
+<br/>
 
-In the project directory, you can run:
+[![Portfolio](https://img.shields.io/badge/🌐%20Ver%20Portfólio-60a5fa?style=for-the-badge&logoColor=white)](https://cibele-soares.github.io/meu-portfolio/)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/cibele-soares-0x7d5)
+[![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/cibele-soares)
+[![Gmail](https://img.shields.io/badge/Gmail-EA4335?style=for-the-badge&logo=gmail&logoColor=white)](mailto:cibele.almeida1212@gmail.com)
 
-### `npm start`
+</div>
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+---
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## 👩‍💻 Sobre o Projeto
 
-### `npm test`
+Portfólio pessoal desenvolvido em **React**, com design moderno e responsivo, apresentando minha trajetória acadêmica, projetos e habilidades técnicas.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+🔗 **Acesse em:** [cibele-soares.github.io/meu-portfolio](https://cibele-soares.github.io/meu-portfolio/)
 
-### `npm run build`
+---
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## ✨ Funcionalidades
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- 🎨 Design escuro moderno com animações suaves
+- ⌨️ Efeito de digitação dinâmica no hero
+- 📊 Barras de habilidades animadas com Intersection Observer
+- 🗂️ Filtro de projetos por categoria
+- 📬 Formulário de contato integrado com **EmailJS**
+- 📱 Totalmente responsivo (mobile-first)
+- 🔝 Botão de voltar ao topo
+- 🧭 Navegação com scroll suave e detecção de seção ativa
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+---
 
-### `npm run eject`
+## 🛠️ Tecnologias
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+<div align="center">
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
+![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
+![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
+![EmailJS](https://img.shields.io/badge/EmailJS-EA4335?style=for-the-badge&logoColor=white)
+![GitHub Pages](https://img.shields.io/badge/GitHub%20Pages-181717?style=for-the-badge&logo=github&logoColor=white)
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+</div>
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+---
 
-## Learn More
+## 🚀 Rodando localmente
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+```bash
+# Clone o repositório
+git clone https://github.com/cibele-soares/meu-portfolio.git
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+# Entre na pasta
+cd meu-portfolio
 
-### Code Splitting
+# Instale as dependências
+npm install
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+# Configure as variáveis de ambiente
+cp .env.example .env
+# Preencha com suas credenciais do EmailJS
 
-### Analyzing the Bundle Size
+# Rode o projeto
+npm start
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+---
 
-### Making a Progressive Web App
+## ⚙️ Variáveis de Ambiente
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+Crie um arquivo `.env` na raiz do projeto com:
 
-### Advanced Configuration
+```env
+REACT_APP_EMAILJS_SERVICE_ID=seu_service_id
+REACT_APP_EMAILJS_TEMPLATE_ID=seu_template_id
+REACT_APP_EMAILJS_PUBLIC_KEY=sua_public_key
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+> As credenciais do EmailJS podem ser obtidas em [dashboard.emailjs.com](https://dashboard.emailjs.com)
 
-### Deployment
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+## 📁 Estrutura do Projeto
 
-### `npm run build` fails to minify
+```
+meu-portfolio/
+├── public/
+├── src/
+│   ├── App.jsx        # Componente principal
+│   ├── ciber.jpg      # Foto de perfil
+│   ├── index.js
+│   └── index.css
+├── .env               # Variáveis de ambiente (não commitado)
+├── .gitignore
+└── package.json
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+---
+
+## 📬 Contato
+
+<div align="center">
+
+Desenvolvido com 💙 por **Cibele Soares**  
+Estudante de Sistemas de Informação — USP São Carlos
+
+</div>
+
+<div align="center">
+<img src="https://capsule-render.vercel.app/api?type=waving&color=60a5fa&height=100&section=footer" width="100%"/>
+</div>
