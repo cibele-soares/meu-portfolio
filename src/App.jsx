@@ -8,38 +8,6 @@ const NAV = ["Home", "Sobre", "Experiência", "Projetos", "Contato"];
 const PROJECTS = [
   { 
     id: 1, 
-    category: "Web", 
-    title: "Sistema Web de Relacionamento", 
-    desc: "Plataforma full-stack desenvolvida como TCC com autenticação, feed dinâmico e painel administrativo.", 
-    tags: ["React", "JavaScript", "MongoDB"], 
-    icon: "🌐"
-  },
-  { 
-    id: 2, 
-    category: "Educação", 
-    title: "Programação Web Para Meninas", 
-    desc: "Mentoria de estudantes do ensino médio em Python, Django, HTML e CSS com foco em inclusão feminina na tech.", 
-    tags: ["Python", "Django", "HTML", "CSS"], 
-    icon: "👩‍💻"
-  },
-  { 
-    id: 3, 
-    category: "Pesquisa", 
-    title: "Pensamento Computacional — IC USP", 
-    desc: "Iniciação Científica investigando aplicações de pensamento computacional em contextos educacionais.", 
-    tags: ["Pesquisa", "Python", "IA"], 
-    icon: "🔬"
-  },
-  { 
-    id: 4, 
-    category: "Segurança", 
-    title: "Análise de Vulnerabilidades", 
-    desc: "Laboratórios práticos de análise de redes e identificação de vetores de ataque — trilha da certificação Cisco.", 
-    tags: ["Cibersegurança", "Linux", "Redes"], 
-    icon: "🔐"
-  },
-  { 
-    id: 5, 
     category: "Jogo", 
     title: "DarkMaze — Jogo em Assembly", 
     desc: "Jogo de exploração e desvio de obstáculos desenvolvido em Assembly para o emulador da CPU do ICMC. Projeto da disciplina de Organização e Arquitetura de Computadores — USP.", 
@@ -48,13 +16,45 @@ const PROJECTS = [
     github: "https://github.com/cibele-soares/DarkMaze" 
   },
   { 
-    id: 6, 
+    id: 2, 
     category: "Jogo", 
     title: "Projeto POO — Jogo em Java", 
     desc: "Jogo 2D desenvolvido em Java com padrões de orientação a objetos: herói, inimigos, bombas, power-ups e sistema de fases. Projeto da disciplina de Programação Orientada a Objetos — USP.", 
     tags: ["Java", "POO", "Swing"], 
     icon: "🎮", 
     github: "https://github.com/cibele-soares/Projeto-POO" 
+  },
+  { 
+    id: 3, 
+    category: "Web", 
+    title: "Sistema Web de Relacionamento", 
+    desc: "Plataforma full-stack desenvolvida como TCC com autenticação, feed dinâmico e painel administrativo.", 
+    tags: ["React", "JavaScript", "MongoDB"], 
+    icon: "🌐"
+  },
+  { 
+    id: 4, 
+    category: "Educação", 
+    title: "Programação Web Para Meninas", 
+    desc: "Mentoria de estudantes do ensino médio em Python, Django, HTML e CSS com foco em inclusão feminina na tech.", 
+    tags: ["Python", "Django", "HTML", "CSS"], 
+    icon: "👩‍💻"
+  },
+  { 
+    id: 5, 
+    category: "Pesquisa", 
+    title: "Pensamento Computacional — IC USP", 
+    desc: "Iniciação Científica investigando aplicações de pensamento computacional em contextos educacionais.", 
+    tags: ["Pesquisa", "Python", "IA"], 
+    icon: "🔬"
+  },
+  { 
+    id: 6, 
+    category: "Segurança", 
+    title: "Análise de Vulnerabilidades", 
+    desc: "Laboratórios práticos de análise de redes e identificação de vetores de ataque — trilha da certificação Cisco.", 
+    tags: ["Cibersegurança", "Linux", "Redes"], 
+    icon: "🔐"
   },
 ];
 
@@ -515,9 +515,11 @@ export default function Portfolio() {
                       <div style={{ display: "flex", gap: 6, flexWrap: "wrap" }}>
                         {p.tags.map(t => <span key={t} style={{ fontSize: 11, fontWeight: 500, color: "#4b5a72", background: "#0f1520", border: "1px solid rgba(99,179,237,.08)", padding: "4px 10px", borderRadius: 99 }}>{t}</span>)}
                       </div>
-                      <a href={p.github} target="_blank" rel="noreferrer" className="gh-link">
-                        &lt;/&gt; GitHub
-                      </a>
+                      {p.github && (
+                        <a href={p.github} target="_blank" rel="noreferrer" className="gh-link">
+                          &lt;/&gt; GitHub
+                        </a>
+                      )}
                     </div>
                   </div>
                 </div>
